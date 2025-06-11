@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hon. Mbarak Said Bashatir</title>
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- FONT AWESOME FOR SOCIAL ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0b1f3a;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-family: 'Great Vibes', cursive;
+      color: #ffcb05;
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+    }
+      .about-hero {
+  position: relative;
+  background: linear-gradient(rgba(11, 31, 58, 0.8), rgba(11, 31, 58, 0.8)),
+              url('back.png') left center/cover no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.about-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-text {
+  z-index: 2;
+  max-width: 50%;
+}
+
+.about-text h2 {
+  font-size: 20px;
+  color: #ffcb05;
+  margin-bottom: 10px;
+}
+
+.about-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.about-fixed-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 50%;
+  z-index: 1;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .about-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .about-text {
+    max-width: 100%;
+  }
+
+  .about-text h1 {
+    font-size: 36px;
+  }
+
+  .about-fixed-image {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 80%;
+    opacity: 0.9;
+  }
+}
+
+    .contact-cta {
+  background-image: url('mombasa.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(11, 31, 58, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-cta h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ffcb05;
+  letter-spacing: 1px;
+}
+
+.contact-cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background-color: #0b1f3a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0b1f3a;
+}
+
+@media (max-width: 768px) {
+  .contact-cta h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+  }
+}
+
+.footer {
+  background-color: #0b1f3a;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-column h3, .footer-column h4 {
+  margin-bottom: 15px;
+  color: #ffcb05;
+}
+
+.footer-column p, .footer-column li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffcb05;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+    <div class="logo">Bashatir</div>
+    <div class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+
+
+<!-- FINAL HERO SECTION FIXED -->
+<section class="about-hero" id="home">
+    <div class="about-overlay">
+      <div class="about-text">
+        <h2>MEET HON. BASHATIR</h2>
+        <h1>HON. MBARAK BASHATIR</h1>
+      </div>
+      <img src="image 10.png" alt="Hon. Bashatir" class="about-fixed-image">
+    </div>
+  </section>
+  
+  <!-- ABOUT BASHATIR SECTION -->
+<section style="background-color: #0b1f3a; color: white; padding: 60px 20px;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 40px;">
+      
+      <!-- IMAGE SECTION -->
+      <div style="flex: 1 1 400px; text-align: center;">
+        <img src="man.png" alt="Mbarak Said Bashatir" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3); object-fit: cover;" />
+      </div>
+      
+      <!-- TEXT SECTION -->
+      <div style="flex: 1 1 600px;">
+        <h2 style="color: #ffcb05; font-size: 28px; margin-bottom: 20px;">MBARAK SAID BASHATIR – THE MAN FROM THE GROUND UP</h2>
+        <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+          Mbarak Said Bashatir is a seasoned entrepreneur and respected businessman whose journey reflects the spirit of hard work, consistency, and smart hustle. Raised along the coastal streets of Mombasa, he came from humble beginnings that shaped his character and drive. From an early age, he understood that success wasn’t given — it had to be built.
+        </p>
+        <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+          He started small, engaging in local trading and small businesses that many overlooked. Over the years, he steadily expanded into the matatu industry, managing a fleet that served Mombasa residents reliably. His ventures later grew to include butcheries and other essential services, always marked by quality, resilience, and a deep understanding of the local market. His sharp business sense and adaptability earned him a name in Mombasa’s growing economy.
+        </p>
+        <p style="line-height: 1.7; font-size: 16px;">
+          Mbarak’s rise was not driven by shortcuts, but by persistence and vision. His ability to turn simple ideas into sustainable ventures has not only elevated his own life, but also created jobs and inspired many young entrepreneurs. He is a living example of building a legacy from the ground up, one decision at a time.
+        </p>
+      </div>
+      
+    </div>
+  </section>
+<!-- PERSONAL LIFE & LEADERSHIP SECTION -->
+<!-- PERSONAL LIFE & LEADERSHIP SECTION WITH BACKGROUND -->
+<section style="
+  background: linear-gradient(rgba(11, 31, 58, 0.9), rgba(11, 31, 58, 0.9)),
+              url('gool.jpg') center center / cover no-repeat;
+  color: white;
+  padding: 60px 20px;
+">
+  <div style="max-width: 1200px; margin: auto; display: flex; flex-direction: row-reverse; flex-wrap: wrap; align-items: center; gap: 40px;">
+    
+    <!-- IMAGE ON THE RIGHT -->
+    <div style="flex: 1 1 400px; text-align: center;">
+      <img src="image 5.png" alt="Mbarak Said Bashatir Leadership" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+    </div>
+
+    <!-- TEXT SECTION -->
+    <div style="flex: 1 1 600px;">
+      <h2 style="color: #ffcb05; font-size: 28px; margin-bottom: 20px;">PERSONAL LIFE & LEADERSHIP</h2>
+      <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+        Mbarak Said Bashatir is a family-oriented man, married and blessed with five children. He is grounded in strong values that reflect both at home and in his leadership. Known for his humility, discipline, and work ethic, Mbarak believes that a stable family and a clear sense of purpose are the foundations of meaningful success.
+      </p>
+      <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+        He is the Managing Director of 
+        <a href="http://bit.ly/3Zkl5K1" style="color: #ffcb05; text-decoration: underline;">Sulmaq International Ltd</a> 
+        and 
+        <a href="https://shorturl.at/kQaxm" style="color: #ffcb05; text-decoration: underline;">Merida Investment Ltd</a>, 
+        two fast-growing companies that provide efficient services in real estate, building construction, and infrastructure across Eastern and Central Africa. With a sharp eye for opportunity and a deep understanding of the African market, Mbarak has steered both companies to deliver high-quality, globally competitive solutions while creating employment and empowering local professionals.
+      </p>
+      <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+        Mbarak leads with vision, surrounding himself with skilled teams who share his mission to transform Africa through innovation and excellence. Under his guidance, Sulmaq and Merida have earned a reputation for trust, delivery, and forward-thinking strategies that continue to push boundaries in the construction and investment space.
+      </p>
+      <p style="line-height: 1.7; font-size: 16px;">
+        Mbarak Said Bashatir stands as a symbol of what focused leadership, integrity, and hard work can achieve. His journey is proof that African businesses can rise, compete globally, and create lasting impact — both economically and socially.
+      </p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- POLITICAL ASPIRATION SECTION -->
+<section style="background-color: #021c36; color: #ffffff; padding: 60px 20px;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px;">
+      
+      <!-- IMAGE ON THE LEFT -->
+      <div style="flex: 1 1 400px; text-align: center;">
+        <img src="image 2.png" alt="Political Aspirations - Mbarak Bashatir" style="width: 100%; max-width: 400px; height: auto; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.3);" />
+      </div>
+  
+      <!-- TEXT SECTION -->
+      <div style="flex: 1 1 600px;">
+        <h2 style="color: #ffffff; font-size: 28px; margin-bottom: 20px;">POLITICAL ASPIRATION</h2>
+        <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+          For years, the people of Kisauni have endured a cycle of empty promises, underdevelopment, and leaders who put personal interests above public service. Corruption, neglect, and a growing disconnect between elected leaders and their constituents have left communities stuck, struggling with the same problems year after year. Mbarak Said Bashatir has seen it all — and he has decided it’s time for real change.
+        </p>
+        <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+          Having worked closely with many political figures in the past, Bashatir understands the system from the inside. But unlike the others, he’s not coming to play politics — he’s stepping into the scene to offer leadership that listens, acts, and delivers. Through his own effort, he founded the Bashatir Foundation, a grassroots initiative that empowers the people of Kisauni — especially women and youth — through school bursaries, economic opportunities, and constant support on the ground. Where others show up only during elections, Bashatir has been present every day.
+        </p>
+        <p style="line-height: 1.7; font-size: 16px; margin-bottom: 20px;">
+          His mission is simple: to bridge the gap between leaders and the people. To restore dignity, trust, and real service in Kisauni. He is not fueled by ambition — he is driven by duty. That’s why in 2027, Mbarak Said Bashatir will be on the ballot as a candidate for Member of Parliament for Kisauni. His promise is clear: leadership that works, leadership that listens, and leadership that makes sense.
+        </p>
+        <p style="line-height: 1.7; font-size: 16px;">
+          Kisauni deserves better. Bashatir is ready.
+        </p>
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- SECTION: BASHATIR WITH RUTO & DUALE -->
+<section style="background-color: #021c36; padding: 80px 20px;">
+    <div style="max-width: 1200px; margin: auto; display: flex; flex-wrap: wrap; align-items: center; gap: 40px; color: #fff;">
+  
+      <!-- TEXT LEFT -->
+      <div style="flex: 1 1 500px;">
+        <h2 style="font-size: 26px; font-weight: bold; margin-bottom: 20px;">Bashatir with President William Ruto & Health CS Aden Duale</h2>
+        <p style="font-size: 18px; font-weight: bold; line-height: 1.6;">
+          A powerful moment of unity and shared purpose. This photo captures Bashatir standing with President Ruto and Cabinet Secretary Aden Duale — leaders shaping the future of Kenya. It reflects vision, resilience, and readiness to work alongside great minds for the betterment of the people.
+        </p>
+      </div>
+  
+      <!-- IMAGE RIGHT -->
+      <div style="flex: 1 1 600px; text-align: center;">
+        <img src="history.jpeg" alt="Bashatir with Ruto and Duale" style="width: 100%; max-width: 550px; height: auto; border-radius: 10px; box-shadow: 0 4px 15px rgba(0,0,0,0.4);" />
+      </div>
+  
+    </div>
+  </section>
+  
+  <!-- BLOG SECTION WITH bridge.jpg BACKGROUND -->
+  <section style="background-image: url('bridge.jpg'); background-size: cover; background-position: center; padding: 60px 20px;">
+    <div style="background-color: rgba(0, 0, 0, 0.65); padding: 60px 20px; border-radius: 10px;">
+      <div style="max-width: 1000px; margin: auto; text-align: center; color: #fff;">
+        <h2 style="font-size: 30px; margin-bottom: 20px;">📝 BLOGS</h2>
+        <p style="font-size: 18px; margin-bottom: 30px;">
+          See more in Bashatir's blog post — powerful stories, insights, and ideas straight from the man himself.
+        </p>
+        <a href="http://mbarak1.blogspot.com/?m=1" target="_blank" style="display: inline-block; padding: 15px 35px; background-color: #ffffff; color: #021c36; text-decoration: none; font-weight: bold; border-radius: 8px; transition: background-color 0.3s;">
+          🔗 Visit Bashatir's Blog
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+<!-- CONTACT US SECTION -->
+<section class="contact-cta">
+    <div class="cta-content">
+      <h4>GET IN TOUCH</h4>
+      <h2>Have questions or want to collaborate?</h2>
+      <a href="mailto:info@bashatirleadership.org" class="cta-button">CONTACT US</a>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Section: Logo & Address -->
+      <div class="footer-column">
+        <h3>Bashatir Leadership</h3>
+        <p>Kisauni, Mombasa, Kenya</p>
+        <p><i class="fas fa-envelope"></i> info@bashatir001.com</p>
+        <p><i class="fas fa-phone"></i> +254 796 944 005</p>
+      </div>
+  
+      <!-- Section: Navigation -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section: Social Icons -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/https://www.facebook.com/share/1AiHAmc7uP/?mibextid=wwXIfr" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.twitter.com/https://www.tiktok.com/@hon.bashatir001?_t=ZM-8x7Z8nrR3Xa&_r=1" target="_blank" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/https://www.instagram.com/mbarakbashatir_001?igsh=MWMwem94ZDFjb2g5Yw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/https://www.tiktok.com/@hon.bashatir001?_t=ZM-8x7Z8nrR3Xa&_r=1" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/254796944005" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+          </div>
+          
+      </div>
+    </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bashatir 001. All rights reserved.</p>
+      <p>&copy; Made by DannyBoy.</p>
+    </div>
+  </footer>
+</body>
+</html>

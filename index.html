@@ -1,0 +1,732 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hon. Mbarak Said Bashatir</title>
+
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- FONT AWESOME FOR SOCIAL ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0b1f3a;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-family: 'Great Vibes', cursive;
+      color: #ffcb05;
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+    }
+
+    .hero {
+  position: relative;
+  background: linear-gradient(rgba(11, 31, 58, 0.7), rgba(11, 31, 58, 0.7)),
+              url('bridge.jpg') left center / cover no-repeat;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.hero-overlay {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  z-index: 2;
+  max-width: 50%;
+}
+
+.hero-content h2 {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.signature {
+  font-size: 36px;
+  font-style: italic;
+  color: #ffcb05;
+}
+
+.hero-fixed-image {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: auto;
+  max-width: 50%;
+  object-fit: cover;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .hero-overlay {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .hero-content {
+    max-width: 100%;
+  }
+
+  .hero-content h2 {
+    font-size: 36px;
+  }
+
+  .hero-fixed-image {
+    position: relative;
+    bottom: auto;
+    right: auto;
+    max-width: 80%;
+    height: auto;
+    opacity: 0.9;
+  }
+}
+
+
+
+    .section {
+      padding: 60px 30px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section h3 {
+      font-size: 30px;
+      color: #0b1f3a;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0b1f3a;
+      color: white;
+    }
+
+    .section {
+      background: 
+        linear-gradient(to bottom, rgba(11, 31, 58, 0.93), rgba(11, 31, 58, 0.93)),
+        url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      padding: 80px 20px;
+    }
+
+    .section-title-light {
+      text-align: center;
+      font-size: 2.8em;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #0b1f3a;
+      color: white;
+    }
+
+    .section {
+      background: 
+        linear-gradient(to bottom, rgba(11, 31, 58, 0.93), rgba(11, 31, 58, 0.93)),
+        url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+      padding: 80px 20px;
+    }
+
+    .section-title-light {
+      text-align: center;
+      font-size: 2.8em;
+      font-weight: 700;
+      margin-bottom: 50px;
+      color: #fff;
+    }
+
+    .policies {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .policy-card {
+      border-radius: 16px;
+      padding: 30px 25px;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+      text-align: center;
+      position: relative;
+    }
+
+    .policy-card h4 {
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      font-weight: 600;
+    }
+
+    .policy-card p {
+      font-size: 1em;
+      line-height: 1.6;
+    }
+
+    .learn-btn-global {
+      margin: 50px auto 0;
+      display: block;
+      background-color: #ffffff;
+      color: #0b1f3a;
+      padding: 12px 30px;
+      border-radius: 30px;
+      font-weight: 600;
+      text-decoration: none;
+      text-align: center;
+      width: max-content;
+      transition: 0.3s ease-in-out;
+    }
+
+    .learn-btn-global:hover {
+      background-color: #f4f4f4;
+      color: #0a1830;
+    }
+
+    /* Card colors */
+    .card-red    { background-color: #e53935; }
+    .card-yellow { background-color: #fbc02d; color: #111; }
+    .card-green  { background-color: #43a047; }
+    .card-blue   { background-color: #1e88e5; }
+    .card-purple { background-color: #8e24aa; }
+    .card-orange { background-color: #fb8c00; }
+
+    /* Emoji-style icons in h4 titles */
+    .policy-card h4::before {
+      display: block;
+      font-size: 2rem;
+      margin-bottom: 8px;
+    }
+
+    .card-red h4::before    { content: "🤝"; }
+    .card-yellow h4::before { content: "🛡️"; }
+    .card-green h4::before  { content: "📚"; }
+    .card-blue h4::before   { content: "⚖️"; }
+    .card-purple h4::before { content: "💼"; }
+    .card-orange h4::before { content: "🏥"; }
+
+    @media screen and (max-width: 1024px) {
+      .policies {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      .policies {
+        grid-template-columns: 1fr;
+      }
+    }
+    .about-bg {
+  background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('coast.jpg') center/cover no-repeat;
+  color: white;
+  padding: 60px 30px;
+}
+
+.about-title {
+  font-size: 32px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 40px;
+  color: #ffcb05;
+}
+
+.about-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+  min-height: 400px; /* Ensures the whole section holds shape */
+}
+
+.about-wrapper img {
+  width: 100%;
+  max-width: 500px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+  margin: 0;
+  flex: 1;
+  align-self: stretch; /* This is what makes the image touch the bottom */
+}
+
+.about-text {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+.about-btn {
+  margin-top: 15px;
+  background: #007BFF; /* Neat blue */
+  color: white;
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  width: fit-content;
+}
+
+
+    .vision-mission {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: 
+        linear-gradient(to bottom right, rgba(11, 31, 58, 0.85), rgba(11, 31, 58, 0.85)),
+        url('https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1600&q=80') no-repeat center center/cover;
+      padding: 100px 30px;
+      color: white;
+      text-align: center;
+    }
+
+    .vision-mission h1 {
+      font-size: 38px;
+      margin-bottom: 60px;
+      color: #fff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+
+    .vision-mission-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .vision-box,
+    .mission-box {
+      flex: 1 1 400px;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .vision-box:hover,
+    .mission-box:hover {
+      transform: translateY(-8px);
+    }
+
+    .vision-box h3,
+    .mission-box h3 {
+      font-size: 26px;
+      color: #ffffff;
+      margin-bottom: 15px;
+    }
+
+    .vision-box p,
+    .mission-box p {
+      font-size: 17px;
+      color: #e0e0e0;
+      line-height: 1.7;
+    }
+
+    @media (max-width: 768px) {
+      .vision-box, .mission-box {
+        flex: 1 1 100%;
+      }
+    }
+
+.contact-cta {
+  background-image: url('mombasa.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 30px;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.contact-cta::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(11, 31, 58, 0.6); /* dark overlay */
+  z-index: 1;
+}
+
+.cta-content {
+  position: relative;
+  z-index: 2;
+  max-width: 800px;
+  margin: auto;
+}
+
+.contact-cta h4 {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 15px;
+  color: #ffcb05;
+  letter-spacing: 1px;
+}
+
+.contact-cta h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+.cta-button {
+  background-color: #0b1f3a;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #0b1f3a;
+}
+
+@media (max-width: 768px) {
+  .contact-cta h2 {
+    font-size: 28px;
+  }
+
+  .cta-button {
+    padding: 12px 25px;
+  }
+}
+
+.footer {
+  background-color: #0b1f3a;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-column h3, .footer-column h4 {
+  margin-bottom: 15px;
+  color: #ffcb05;
+}
+
+.footer-column p, .footer-column li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffcb05;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">Bashatir</div>
+    <div class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="policies.html">Policies</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+ <!-- FINAL HOME HERO SECTION -->
+<section class="hero" id="home">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h2>HON. <br/>MBARAK SAID <br/>BASHATIR</h2>
+        <p class="signature">Bashatir</p>
+      </div>
+      <img src="image 1.png" alt="Hon. Bashatir Portrait" class="hero-fixed-image" />
+    </div>
+  </section>
+  
+
+
+  <!-- POLICIES -->
+  <section class="section" id="policies">
+    <h2 class="section-title-light">Key Issues & Policies</h2>
+  
+    <div class="policies">
+      <div class="policy-card card-red">
+        <h4>Empowering Youth & Women</h4>
+        <p>Expand training, jobs, and innovation grants for a prosperous Kisauni.</p>
+      </div>
+      <div class="policy-card card-yellow">
+        <h4>Security & Safe Streets</h4>
+        <p>Community policing partnerships to reduce crime and restore peace.</p>
+      </div>
+      <div class="policy-card card-green">
+        <h4>Education for All</h4>
+        <p>Invest in bursaries, infrastructure, and tech-driven classrooms.</p>
+      </div>
+      <div class="policy-card card-blue">
+        <h4>Leadership with Integrity</h4>
+        <p>Accountable governance rooted in humility and service.</p>
+      </div>
+      <div class="policy-card card-purple">
+        <h4>Jobs & Enterprise</h4>
+        <p>Create sustainable opportunities for youth through SMEs and Saccos.</p>
+      </div>
+      <div class="policy-card card-orange">
+        <h4>Access to Health Services</h4>
+        <p>Upgrade clinics and launch health outreach programs.</p>
+      </div>
+    </div>
+  
+    <a href="policies.html" class="learn-btn-global">Learn More</a>
+
+  </section>
+ <!-- ABOUT -->
+ <section class="about-bg" id="about">
+    <h3 class="about-title">Meet Bashatir</h3>
+    <div class="about-wrapper">
+      <img src="image 2.png" alt="About Bashatir">
+      <div class="about-text">
+        <p>
+          Hon. Mbarak Said Bashatir is a visionary leader with a passion for grassroots transformation,
+          community upliftment, and meaningful change for every resident of Kisauni.
+        </p>
+        <button class="about-btn">About</button>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- VISION & MISSION -->
+  <section class="vision-mission">
+    <h1> Mission &  Vision</h1>
+    <div class="vision-mission-wrapper">
+      <div class="vision-box">
+        <h3>🌍 My Vision</h3>
+        <p>
+          To build a united, empowered, and dignified Kisauni where every citizen has the opportunity to thrive through inclusive leadership, integrity, and sustainable development.
+        </p>
+      </div>
+      <div class="mission-box">
+        <h3>🎯 My Mission</h3>
+        <p>
+          To serve the people of Kisauni with humility, transparency, and actionable strategies that prioritize education, security, youth empowerment, and economic progress for all.
+        </p>
+      </div>
+    </div>
+  </section>
+  
+<!-- CONTACT US SECTION -->
+<section class="contact-cta">
+    <div class="cta-content">
+      <h4>GET IN TOUCH</h4>
+      <h2>Have questions or want to collaborate?</h2>
+      <a href="mailto:info@bashatirleadership.org" class="cta-button">CONTACT US</a>
+    </div>
+  </section>
+  
+  
+
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Section: Logo & Address -->
+      <div class="footer-column">
+        <h3>Bashatir Leadership</h3>
+        <p>Kisauni, Mombasa, Kenya</p>
+        <p><i class="fas fa-envelope"></i> info@bashatir001.com</p>
+        <p><i class="fas fa-phone"></i> +254 796 944 005</p>
+      </div>
+  
+      <!-- Section: Navigation -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="footer-bottom">
+        <p>&copy; 2025 Bashatir 001. All rights reserved.</p>
+        <p>&copy; Made by DannyBoy.</p>
+      </div>
+    </footer>
+  </body>
+  </html>
