@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Hon. Mbarak Said Bashatir</title>
+  <!-- Fonts and Icons -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- FONT AWESOME FOR SOCIAL ICONS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfdfd;
+      color: #333;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #0b1f3a;
+      padding: 15px 30px;
+      flex-wrap: wrap;
+    }
+
+    .nav-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .nav-toggle span {
+      background: white;
+      height: 3px;
+      width: 25px;
+      margin: 4px 0;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #ffd700;
+    }
+
+    .logo {
+      font-size: 30px;
+      font-family: 'Great Vibes', cursive;
+      color: #ffcb05;
+    }
+
+    @media (max-width: 768px) {
+      .nav-toggle {
+        display: flex;
+      }
+
+      nav ul {
+        flex-direction: column;
+        width: 100%;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+      .nav-btn {
+  background-color: #ffcb05;
+  color: #0b1f3a !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #e6b800;
+  color: white !important;
+}
+
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      padding: 50px 30px;
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('bridge.jpg') center/cover no-repeat;
+      color: #fff;
+    }
+
+    .hero-content {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .hero-content h2 {
+      font-size: 40px;
+    }
+    .hero-content h3 {
+      font-size: 50px;
+      color:#e6b800;
+    }
+
+
+    .manifesto-section {
+  background: linear-gradient(to bottom, rgba(11, 31, 58, 0.95), rgba(11, 31, 58, 0.95)),
+              url('https://images.unsplash.com/photo-1548013146-72479768bada?auto=format&fit=crop&w=1400&q=80') no-repeat center center/cover;
+  padding: 80px 20px;
+  color: white;
+}
+
+.manifesto-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.manifesto-image {
+  flex: 1 1 300px;
+}
+
+.manifesto-image img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+}
+
+.manifesto-content {
+  flex: 2;
+}
+
+.manifesto-content h2 {
+  font-size: 32px;
+  color: #ffcb05;
+  margin-bottom: 20px;
+}
+
+.manifesto-content p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #f0f0f0;
+  margin-bottom: 25px;
+}
+
+.manifesto-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.manifesto-buttons .cta-button {
+  background-color: #ffffff;
+  color: #0b1f3a;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.manifesto-buttons .cta-button:hover {
+  background-color: #f4f4f4;
+}
+.footer {
+  background-color: #0b1f3a;
+  color: #fff;
+  padding: 60px 20px 30px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.footer-column {
+  flex: 1 1 250px;
+}
+
+.footer-column h3, .footer-column h4 {
+  margin-bottom: 15px;
+  color: #ffcb05;
+}
+
+.footer-column p, .footer-column li {
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  text-decoration: none;
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #fff;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-icons a {
+  font-size: 20px;
+  color: #ffcb05;
+  transition: transform 0.3s, color 0.3s;
+}
+
+.social-icons a:hover {
+  transform: scale(1.2);
+  color: #ffffff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  font-size: 14px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  color: #aaa;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+}
+
+</style>
+</head>
+<body>
+<!-- NAV -->
+<nav>
+    <div class="logo">Bashatir</div>
+    <div class="nav-toggle" onclick="document.querySelector('nav ul').classList.toggle('active')">
+      <span></span><span></span><span></span>
+    </div>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="manifesto.html" class="nav-btn">Manifesto</a></li>
+
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h2>HON. <br/>MBARAK SAID <br/>BASHATIR</h2>
+      <h3>MANIFESTO </h3>
+    </div>
+  </section>
+
+  <section class="manifesto-section">
+    <div class="manifesto-wrapper">
+      <div class="manifesto-image">
+        <img src="manifesto.png" alt="Bashatir Manifesto Cover" />
+      </div>
+      <div class="manifesto-content">
+        <h2>📘 Bashatir 001 Manifesto</h2>
+        <p>
+          This manifesto outlines the bold, people-centered vision and development agenda of Hon. Bashatir for Kisauni. It is available in both Kiswahili and English copies.
+          <br><br>
+          I encourage every Kisauni resident to read it,  this is more than a promise, it’s the roadmap for real change, action, and accountable leadership.
+        </p>
+        <div class="manifesto-buttons">
+            <a href="manifesto_english.pdf" class="cta-button" download>📥 English</a>
+            <a href="manifesto_swahili.pdf" class="cta-button" download>📥  Kiswahili</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-container">
+      <!-- Section: Logo & Address -->
+      <div class="footer-column">
+        <h3>Bashatir Leadership</h3>
+        <p>Kisauni, Mombasa, Kenya</p>
+        <p><i class="fas fa-envelope"></i> info@bashatir001.com</p>
+        <p><i class="fas fa-phone"></i> +254 796 944 005</p>
+      </div>
+  
+      <!-- Section: Navigation -->
+      <div class="footer-column">
+        <h4>Quick Links</h4>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="policies.html">Policies</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+  
+      <!-- Section: Social Icons -->
+      <div class="footer-column">
+        <h4>Follow Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/share/1AiHAmc7uP/?mibextid=wwXIfr" target="_blank" aria-label="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+          <a href="https://www.tiktok.com/@hon.bashatir001?_t=ZM-8x7Z8nrR3Xa&_r=1" target="_blank" aria-label="TikTok">
+            <i class="fab fa-tiktok"></i>
+          </a>
+          <a href="https://www.instagram.com/mbarakbashatir_001?igsh=MWMwem94ZDFjb2g5Yw==" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://www.youtube.com/@bashatirtv" target="_blank" aria-label="YouTube">
+            <i class="fab fa-youtube"></i>
+          </a>
+          <a href="https://wa.me/254796944005" target="_blank" aria-label="WhatsApp">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+  
+    <div class="footer-bottom">
+      <p>&copy; 2025 Bashatir 001. All rights reserved.</p>
+      <p>&copy; Made by DannyBoy.</p>
+    </div>
+  </footer>
+</body>
+</html>

@@ -88,6 +88,20 @@
       nav ul.active {
         display: flex;
       }
+      .nav-btn {
+  background-color: #ffcb05;
+  color: #0b1f3a !important;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.nav-btn:hover {
+  background-color: #e6b800;
+  color: white !important;
+}
+
     }
 
     .hero {
@@ -368,18 +382,16 @@
   line-height: 1.8;
 }
 
-.about-btn {
-  margin-top: 15px;
-  background: #007BFF; /* Neat blue */
+.cta-button {
+  background-color: #0b1f3a;
   color: white;
-  padding: 8px 18px;
-  border: none;
-  border-radius: 4px;
-  font-weight: 600;
-  font-size: 15px;
-  cursor: pointer;
-  width: fit-content;
+  padding: 15px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
 }
+
 
 
     .vision-mission {
@@ -602,10 +614,11 @@
       <span></span><span></span><span></span>
     </div>
     <ul>
-      <li><a href="#home">Home</a></li>
-      <li><a href="policies.html">Policies</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a href="index.html">Home</a></li>
+        <li><a href="policies.html">Policies</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="manifesto.html" class="nav-btn">Manifesto</a></li>
     </ul>
   </nav>
 
@@ -666,7 +679,7 @@
           Hon. Mbarak Said Bashatir is a visionary leader with a passion for grassroots transformation,
           community upliftment, and meaningful change for every resident of Kisauni.
         </p>
-        <button class="about-btn">About</button>
+        <a href="about.html" class="cta-button">ABOUT </a>
       </div>
     </div>
   </section>
